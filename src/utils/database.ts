@@ -8,7 +8,7 @@ const connect = () =>{
 mongoose.connect(DATABASE_URL, {
   autoIndex: true,
   dbName: "sanber-be-final",
-  connectTimeoutMS: 10000,
+  connectTimeoutMS: 60000,
 } ).then(() => {
   console.log('Connected to MongoDB');
 }).catch((error) => {
